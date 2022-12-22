@@ -1,6 +1,6 @@
 import React, { useState, useEffect } from "react";
 import "./styles.css";
-import PricingForm from "./PricingForm";
+import PricingForm from "./CalculatorForm";
 
 
 
