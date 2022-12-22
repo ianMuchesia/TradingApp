@@ -3,13 +3,14 @@ import Header from '../components/Header'
 import Services from '../components/Services'
 import Testimonials from '../components/Testimonial'
 import Footer from '../components/Footer'
-import Pricing from '../components/Pricing'
+import CurrencyGraph from "../components/CurrencyGraph"
 const Home = () => {
   return (
     <>
     <Header/>
     <main>
-        <Pricing/>
+        {/* <Pricing/> */}
+        <CurrencyGraph/>
         <Services/>
         <Testimonials/>
         
