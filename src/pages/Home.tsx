@@ -2,20 +2,23 @@ import React from 'react'
 import Header from '../components/Header'
 import Services from '../components/Services'
 import Testimonials from '../components/Testimonial'
-import Footer from '../components/Footer'
+
 import CurrencyGraph from "../components/CurrencyGraph"
-const Home = () => {
+interface Props{
+  watchList: string[];
+}
+const Home = ({watchList}: Props) => {
   return (
     <>
     <Header/>
     <main>
         {/* <Pricing/> */}
-        <CurrencyGraph/>
+        <CurrencyGraph watchList={watchList}/>
         <Services/>
         <Testimonials/>
         
     </main>
-        <Footer/>
+       
     </>
   )
 }
