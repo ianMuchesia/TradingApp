@@ -1,7 +1,10 @@
 import {useState, useEffect} from 'react'
 import GraphCard from './GraphCard';
-const LivePricing = () => {
-  const [watchList, setWatchList] = useState(["IBM", "GOOGL", "MSFT"]);
+interface Props{
+  watchList: string[];
+}
+const LivePricing = ({watchList}:Props) => {
+  
 
   const [chartData , setChartData ] = useState<{}[]>([])
 
@@ -59,7 +62,7 @@ if(isMounted){
         There are many variations of passages of Lorem Ipsum available, but the
         majority have suffered alteration in some look even slightly believable.
       </p>
-      <div className="grid lg:grid-cols-3 gap-10">
+      <div className="grid lg:grid-cols-3 gap-10 ">
         {chartData.map((item:any, index) => {
           return <GraphCard key={index} name={item.name} data={item.response} />;
         })}  
