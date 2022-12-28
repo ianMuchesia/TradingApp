@@ -10,7 +10,7 @@ interface Props{
 }
 
 const GraphCard = ({name, data}:Props) => {
-console.log(data)
+
 
 const state: any = {
     options: {

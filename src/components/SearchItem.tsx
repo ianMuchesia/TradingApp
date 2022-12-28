@@ -13,6 +13,7 @@ const SearchItem = ({result, addToWatchList, setSearch}:Props) => {
 
     const handleClick=()=>{
         addToWatchList(result.symbol);
+        console.log(result.symbol)
         setSearch("")
 
     }
