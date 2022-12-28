@@ -4,6 +4,8 @@ import GraphData from './GraphData';
 interface Props{
 	watchList:string[];
 	setWatchList:React.Dispatch<React.SetStateAction<string[]>>;
+	setChartItem: React.Dispatch<React.SetStateAction<string>>;
+	chartItem:string;
 }
 interface Response{
 	data: {
@@ -19,7 +21,7 @@ interface Response{
 	symbol: string;
 }
 
-const TradingTable = ({watchList, setWatchList}:Props) => {
+const TradingTable = ({watchList, setWatchList , setChartItem , chartItem}:Props) => {
 
 	
 	const [stock , setStock ] = useState<Response[]>([])
@@ -42,14 +44,14 @@ const TradingTable = ({watchList, setWatchList}:Props) => {
 			if(isMounted){
 				setStock(responses)
 			}
-			console.log(responses)
+		
 		    }catch(error: any){
 				console.group(error.message)
 			}
 		}
 		fetchData()
 		return ()=>{isMounted = false}
-	},[]) 
+	},[watchList]) 
 
 
   return (
@@ -68,7 +70,7 @@ const TradingTable = ({watchList, setWatchList}:Props) => {
 				<col className="w-24"> */}
 			</colgroup>
 			<thead className="dark:bg-gray-700">
-				<tr className="text-left">
+				<tr className="text-left lg:underline md:text-lg">
 					<th className="p-3">Symbol</th>
 					<th className="p-3">Current Price</th>
 					<th className="p-3">Change</th>
@@ -86,8 +88,8 @@ const TradingTable = ({watchList, setWatchList}:Props) => {
 				{stock.map(item=>{
 					const {data} = item
 					return(
-						<tr className="border-b border-opacity-20 dark:border-gray-700 dark:bg-gray-900" key={item.symbol}>
-					<td className="p-3">
+						<tr className={`border-b border-opacity-20 dark:border-gray-700 dark:bg-gray-900 cursor-pointer md:text-lg ${chartItem==item.symbol?"text-red-400": ""}` }key={item.symbol}>
+					<td className="p-3" onClick={()=>{setChartItem(item.symbol)}}>
 						<p>{item.symbol}</p>
 					</td>
 					<td className="p-3">
@@ -117,7 +119,7 @@ const TradingTable = ({watchList, setWatchList}:Props) => {
 					</td>
 					<td className="p-3 ">
 						<span className="px-3 py-1 font-semibold rounded-md dark:bg-violet-400 dark:text-gray-900">
-							<span className='text-gray-100'><MdDeleteOutline size={30}/></span>
+							<span className='text-gray-100 hover:text-red-900'><MdDeleteOutline size={30}/></span>
 						</span>
 					</td>
 				</tr>
@@ -128,7 +130,7 @@ const TradingTable = ({watchList, setWatchList}:Props) => {
 		</table>
 	</div>
 </div>
-<GraphData stock={stock}/>
+<GraphData stock={stock} chartItem={chartItem}/>
 </>
   )
 }

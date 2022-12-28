@@ -6,13 +6,13 @@ import Trade from "./pages/Trade"
 import Footer from "./components/Footer"
 
 function App() {
-  const [watchList, setWatchList] = useState(["IBM", "GOOGL", "MSFT"]);
+  const [watchList, setWatchList] = useState([ "GOOGL", "MSFT"]);
 
   return (
   <BrowserRouter>
   <Routes>
     <Route path="/" element={<Home watchList={watchList}/>}/>
-    <Route path="Trade" element={<Trade watchList={watchList} setWatchList={setWatchList}/>}/>
+     <Route path="Trade" element={<Trade watchList={watchList} setWatchList={setWatchList}/>}/>
   </Routes>
   <Footer/>
   </BrowserRouter>

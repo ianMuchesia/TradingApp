@@ -10,18 +10,19 @@ interface Props{
 }
 const Trade = ({watchList , setWatchList}:Props) => {
 
-    
+    const [chartItem , setChartItem ] = useState("GOOGL")
 	
     const addToWatchList=(stock:string)=>{
        if(watchList.includes(stock))return;
-       setWatchList(prevList=>[...prevList, stock])
-
+       setWatchList([...watchList, stock])
+      console.log(watchList)
     }
   return (
     <div className='bg-[#031B34] '>
         <Navbar/>
+        <h2>Shop</h2>
         <InputData addToWatchList={addToWatchList}/>
-        <TradingTable  watchList={watchList} setWatchList={setWatchList}/>
+        <TradingTable  watchList={watchList} setWatchList={setWatchList} setChartItem={setChartItem} chartItem={chartItem}/>
     </div>
   )
 

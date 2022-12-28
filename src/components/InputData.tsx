@@ -29,7 +29,7 @@ const InputData = ({ addToWatchList}: Props) => {
         const {result} =await response.json()
         if(isMounted){
             setResults(result)
-            console.log(result)
+            
         }
         
       } catch (error: any) {
