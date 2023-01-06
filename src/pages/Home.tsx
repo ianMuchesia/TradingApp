@@ -1,9 +1,10 @@
 import React from 'react'
-import Header from '../components/Header'
-import Services from '../components/Services'
-import Testimonials from '../components/Testimonial'
+import Header from '../components/HomePageComponents/Header'
+import Services from '../components/HomePageComponents/Services'
+import Testimonials from '../components/HomePageComponents/Testimonial'
 
-import CurrencyGraph from "../components/CurrencyGraph"
+import CurrencyGraph from "../components/HomePageComponents/CurrencyGraph"
+import Pricing from '../components/HomePageComponents/CurrencyCalculator'
 interface Props{
   watchList: string[];
 }
@@ -12,7 +13,7 @@ const Home = ({watchList}: Props) => {
     <>
     <Header/>
     <main>
-        {/* <Pricing/> */}
+        {/*  <Pricing/>  */}
         <CurrencyGraph watchList={watchList}/>
         <Services/>
         <Testimonials/>
