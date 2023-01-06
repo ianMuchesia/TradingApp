@@ -1,7 +1,7 @@
-import altcoins from "../assets/altcoins.png";
-import bitcoin_calculator from "../assets/bitcoin-calculator.png";
-import bitcoin_encryption from "../assets/bitcoin-encryption.png";
-import mining_hardware from "../assets/mining-hardware.png";
+import altcoins from "../../assets/altcoins.png";
+import bitcoin_calculator from "../../assets/bitcoin-calculator.png";
+import bitcoin_encryption from "../../assets/bitcoin-encryption.png";
+import mining_hardware from "../../assets/mining-hardware.png";
 const ServiceCard = () => {
   return (
     <div>

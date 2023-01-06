@@ -1,9 +1,9 @@
-import bitcoin from "../assets/bitcoin.png";
-
-import cent from "../assets/cent.png";
-import AI from "../assets/artificial.png";
-import Navbar from "./Navbar";
-import bitcoinShiny from "../assets/bitcoinShiny.jpg";
+import bitcoin from "../../assets/bitcoin.png";
+import { Link } from "react-router-dom";
+import cent from "../../assets/cent.png";
+import AI from "../../assets/artificial.png";
+import Navbar from "../Navbar";
+import bitcoinShiny from "../../assets/bitcoinShiny.jpg";
 
 const Header = () => {
   return (
@@ -45,15 +45,19 @@ const Header = () => {
               injected humour randomised words which don't look even slightly
               believable.
             </p>
-            <button
-              style={{
+            <Link to="Trade"
+             
+            >
+              <button
+               style={{
                 background:
                   "linear-gradient(90.07deg, #FF436B -0.79%, rgba(253, 165, 109, 0.98) 99.94%)",
               }}
-              className="text-xl p-3 mt-2 mx-2 rounded-lg text-white "
-            >
-              Start Here
-            </button>
+              className="text-xl p-3 mt-2 mx-2 rounded-lg text-white ">
+                Start Here
+              </button>
+              
+            </Link>
             <img
               src={cent}
               alt="a canadian cent"
