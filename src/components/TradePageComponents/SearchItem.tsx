@@ -19,6 +19,7 @@ const SearchItem = ({
   const handleClick = () => {
     setSearch("");
     addToWatchList(result.symbol);
+    localStorage.setItem("watchList", JSON.stringify(result.symbol))
   };
 
   return (
