@@ -8,13 +8,15 @@ interface Props {
   setWatchList: React.Dispatch<React.SetStateAction<string[]>>;
 }
 const Trade = ({ watchList, setWatchList }: Props) => {
-  const [chartItem, setChartItem] = useState("GOOGL");
+  const [chartItem, setChartItem] = useState(JSON.parse(localStorage.getItem('chartItem')||watchList[0]));
 
   const addToWatchList = (stock: string) => {
     if (watchList.includes(stock)) return;
     setWatchList([...watchList, stock]);
-    console.log(watchList);
+    localStorage.setItem("watchList",JSON.stringify([...watchList, stock]))
+   
   };
+ 
 
 
 

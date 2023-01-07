@@ -1,4 +1,4 @@
-import { useState } from "react"
+import { useEffect, useState } from "react"
 import {BrowserRouter, Routes , Route} from "react-router-dom"
 import './App.css'
 import Home from './pages/Home'
@@ -8,8 +8,10 @@ import Services from "./pages/Services"
 import Contact from "./pages/Contact"
 import About from "./pages/About"
 
+
 function App() {
-  const [watchList, setWatchList] = useState([ "GOOGL", "MSFT"]);
+  const [watchList, setWatchList] = useState(JSON.parse(localStorage.getItem('watchList')!)||[ "GOOGL", "MSFT"]);
+ console.log()
 
   return (
   <BrowserRouter>
