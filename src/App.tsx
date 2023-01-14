@@ -10,7 +10,7 @@ import About from "./pages/About"
 
 
 function App() {
-  const [watchList, setWatchList] = useState(JSON.parse(localStorage.getItem('watchList')!)||[ "GOOGL", "MSFT"]);
+  const [watchList, setWatchList] = useState([ "GOOGL", "MSFT"]);
  
   return (
   <BrowserRouter>

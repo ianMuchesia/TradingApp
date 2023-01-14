@@ -38,17 +38,17 @@ const Navbar = () => {
           <NavLink to="/">HOME</NavLink>
         </li>
         <li className={styles.links}>
-          <NavLink to="Trade">TRADE</NavLink>
+          <NavLink to="/Trade">TRADE</NavLink>
         </li>
         <li className={styles.links}>
-          <NavLink to="About">ABOUT</NavLink>
+          <NavLink to="/About">ABOUT</NavLink>
         </li>
         <li className={styles.links}>
-          <NavLink to="Contact">CONTACT US</NavLink>
+          <NavLink to="/Contact">CONTACT US</NavLink>
         </li>
 
         <li className={styles.links}>
-          <NavLink to="Services">SERVICES</NavLink>
+          <NavLink to="/Services">SERVICES</NavLink>
         </li>
       </ul>
       <h6 className="hidden md:block text-white text-lg">Log in</h6>
