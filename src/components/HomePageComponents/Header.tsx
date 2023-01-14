@@ -37,13 +37,11 @@ const Header = () => {
 
           <div className="sm:ml-8 w-[40%]">
             <h1 className="font-[800] text-5xl sm:text-6xl text-white w-[60%]">
-              Exchange and trade
+            TradeSmart
             </h1>
             <h3 className="text-3xl text-white ">at the best rate</h3>
             <p className="text-sm lg:text-lg text-gray-200 hidden lg:block">
-              There are many variations of passages of Lorem Ipsum form, by
-              injected humour randomised words which don't look even slightly
-              believable.
+            TradeSmart: Unlock your trading potential and achieve consistent, high returns with our advanced tools, strategies and exceptional customer service
             </p>
             <Link to="Trade"
              
