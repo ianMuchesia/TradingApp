@@ -42,8 +42,7 @@ const PricingForm = ({
         Currency Calculator
       </h2>
       <p className="text-center text-gray-200 text-base m-4">
-        There are many variations of passages of Lorem Ipsum form, by injected
-        humour randomised words which look .
+      Introducing the TradeSmart Currency Converter, a powerful tool that helps you easily calculate the currency conversion rate and make accurate trade decisions, in real-time.
       </p>
       <h5 className="text-2xl m-1  text-gray-200 text-center">
         please enter the amount here
