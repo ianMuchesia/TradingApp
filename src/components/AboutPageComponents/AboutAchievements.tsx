@@ -2,7 +2,7 @@ import React from 'react'
 
 const AboutAchievements = () => {
   return (
-    <>
+    <div>
     <h1 className="text-5xl text-center">
       <span className="font-bold">Large</span>
       <br /> Achievments
@@ -24,7 +24,7 @@ const AboutAchievements = () => {
     <div className="grid place-items-center my-6">
       <button className="shadow__btn">Start Now</button>
     </div>
-    </>
+    </div>
   )
 }
 

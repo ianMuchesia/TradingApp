@@ -10,8 +10,10 @@ const About = () => {
     <>
       <AboutHeader />
       <div className="mx-16 mt-4">
+        <div className="grid lg:grid-cols-2 gap-2 xl:gap-4">
       <AboutAchievements/>
       <AboutCards/>
+      </div>
       <AboutTeam />
       </div>
     </>

@@ -1,4 +1,11 @@
-
+import image_1 from "../../assets/image_1.jpg";
+import image_2 from "../../assets/image_2.jpg";
+import image_3 from "../../assets/image_3.jpg";
+import image_4 from "../../assets/image_4.jpg";
+import image_5 from "../../assets/image_5.jpg";
+import image_6 from "../../assets/image_6.jpg";
+import image_7 from "../../assets/image_7.jpg";
+import image_8 from "../../assets/image_8.jpg";
 const Team = () => {
     return (
       <div className="px-4 py-16 mx-auto sm:max-w-xl md:max-w-full lg:max-w-screen-xl md:px-24 lg:px-8 lg:py-20">
@@ -34,28 +41,27 @@ const Team = () => {
               </svg>
               <span className="relative">Welcome</span>
             </span>{' '}
-            our talented team of professionals
+            Our talented team of professionals
           </h2>
           <p className="text-base text-gray-700 md:text-lg">
-            Sed ut perspiciatis unde omnis iste natus error sit voluptatem
-            accusantium doloremque rem aperiam, eaque ipsa quae.
+          Our team members are dedicated, highly skilled professionals, experts in their field, and we are proud to have them.
           </p>
         </div>
-        <div className="grid gap-10 sm:grid-cols-2 lg:grid-cols-4">
+        <div className="grid gap-10 sm:grid-cols-2 lg:grid-cols-4 ">
           <div>
             <div className="relative overflow-hidden transition duration-300 transform rounded shadow-lg lg:hover:-translate-y-2 hover:shadow-2xl">
               <img
-                className="object-cover w-full h-56 md:h-64 xl:h-80"
-                src="https://images.pexels.com/photos/220453/pexels-photo-220453.jpeg?auto=compress&amp;cs=tinysrgb&amp;dpr=3&amp;h=750&amp;w=1260"
+                className="object-cover w-full h-56 md:h-64 xl:h-96 "
+                src={image_1}
                 alt="Person"
               />
               <div className="absolute inset-0 flex flex-col justify-center px-5 py-4 text-center transition-opacity duration-300 bg-black bg-opacity-75 opacity-0 hover:opacity-100">
                 <p className="mb-1 text-lg font-bold text-gray-100">
-                  Oliver Aguilerra
+                  Evans Mwirigi
                 </p>
                 <p className="mb-4 text-xs text-gray-100">Product Manager</p>
                 <p className="mb-4 text-xs tracking-wide text-gray-400">
-                  Vincent Van Gogh’s most popular painting, The Starry Night.
+                Product manager driving product vision and strategy to deliver successful outcomes.
                 </p>
                 <div className="flex items-center justify-center space-x-3">
                   <a
@@ -81,17 +87,17 @@ const Team = () => {
           <div>
             <div className="relative overflow-hidden transition duration-300 transform rounded shadow-lg lg:hover:-translate-y-2 hover:shadow-2xl">
               <img
-                className="object-cover w-full h-56 md:h-64 xl:h-80"
-                src="https://images.pexels.com/photos/2381069/pexels-photo-2381069.jpeg?auto=compress&amp;cs=tinysrgb&amp;dpr=2&amp;h=750&amp;w=1260"
+                className="object-cover w-full h-56 md:h-64 xl:h-96 "
+                src={image_2}
                 alt="Person"
               />
               <div className="absolute inset-0 flex flex-col justify-center px-5 py-4 text-center transition-opacity duration-300 bg-black bg-opacity-75 opacity-0 hover:opacity-100">
                 <p className="mb-1 text-lg font-bold text-gray-100">
-                  Marta Clermont
+                 Salma Ali
                 </p>
                 <p className="mb-4 text-xs text-gray-100">Design Team Lead</p>
                 <p className="mb-4 text-xs tracking-wide text-gray-400">
-                  Amet I love liquorice jujubes pudding croissant I love pudding.
+                Leading design team to create visually stunning and intuitive user interfaces.
                 </p>
                 <div className="flex items-center justify-center space-x-3">
                   <a
@@ -117,17 +123,17 @@ const Team = () => {
           <div>
             <div className="relative overflow-hidden transition duration-300 transform rounded shadow-lg lg:hover:-translate-y-2 hover:shadow-2xl">
               <img
-                className="object-cover w-full h-56 md:h-64 xl:h-80"
-                src="https://images.pexels.com/photos/2379004/pexels-photo-2379004.jpeg?auto=compress&amp;cs=tinysrgb&amp;dpr=2&amp;h=750&amp;w=1260"
+                className="object-cover w-full h-56 md:h-64 xl:h-96 "
+                src={image_3}
                 alt="Person"
               />
               <div className="absolute inset-0 flex flex-col justify-center px-5 py-4 text-center transition-opacity duration-300 bg-black bg-opacity-75 opacity-0 hover:opacity-100">
                 <p className="mb-1 text-lg font-bold text-gray-100">
-                  Anthony Geek
+                  Ian Muchesia
                 </p>
-                <p className="mb-4 text-xs text-gray-100">CTO, Lorem Inc.</p>
+                <p className="mb-4 text-xs text-gray-100">CTO, Trade Inc.</p>
                 <p className="mb-4 text-xs tracking-wide text-gray-400">
-                  Apple pie macaroon toffee jujubes pie tart cookie caramels.
+                Innovative CTO leading technical strategy and product development.
                 </p>
                 <div className="flex items-center justify-center space-x-3">
                   <a
@@ -153,18 +159,17 @@ const Team = () => {
           <div>
             <div className="relative overflow-hidden transition duration-300 transform rounded shadow-lg lg:hover:-translate-y-2 hover:shadow-2xl">
               <img
-                className="object-cover w-full h-56 md:h-64 xl:h-80"
-                src="https://images.pexels.com/photos/3747435/pexels-photo-3747435.jpeg?auto=compress&amp;cs=tinysrgb&amp;dpr=2&amp;h=750&amp;w=1260"
+                className="object-cover w-full h-56 md:h-64 xl:h-96 "
+                src={image_5}
                 alt="Person"
               />
               <div className="absolute inset-0 flex flex-col justify-center px-5 py-4 text-center transition-opacity duration-300 bg-black bg-opacity-75 opacity-0 hover:opacity-100">
                 <p className="mb-1 text-lg font-bold text-gray-100">
-                  Alice Melbourne
+                Grace Mwende
                 </p>
                 <p className="mb-4 text-xs text-gray-100">Human Resources</p>
                 <p className="mb-4 text-xs tracking-wide text-gray-400">
-                  Lorizzle ipsum bling bling sit amizzle, consectetuer adipiscing
-                  elit.
+                Human Resource professional fostering a positive company culture and employee engagement.
                 </p>
                 <div className="flex items-center justify-center space-x-3">
                   <a
@@ -190,18 +195,17 @@ const Team = () => {
           <div>
             <div className="relative overflow-hidden transition duration-300 transform rounded shadow-lg lg:hover:-translate-y-2 hover:shadow-2xl">
               <img
-                className="object-cover w-full h-56 md:h-64 xl:h-80"
-                src="https://images.pexels.com/photos/3785077/pexels-photo-3785077.jpeg?auto=compress&amp;cs=tinysrgb&amp;dpr=2&amp;w=500"
+                className="object-cover w-full h-56 md:h-64 xl:h-96 "
+                src={image_6}
                 alt="Person"
               />
               <div className="absolute inset-0 flex flex-col justify-center px-5 py-4 text-center transition-opacity duration-300 bg-black bg-opacity-75 opacity-0 hover:opacity-100">
                 <p className="mb-1 text-lg font-bold text-gray-100">
-                  Martin Garix
+                  Msodoki Mwanza Mwanza
                 </p>
-                <p className="mb-4 text-xs text-gray-100">Good guy</p>
+                <p className="mb-4 text-xs text-gray-100">Cloud Engineer</p>
                 <p className="mb-4 text-xs tracking-wide text-gray-400">
-                  Bacon ipsum dolor sit amet salami jowl corned beef, andouille
-                  flank.
+                Experienced Cloud Engineer, optimize and manage cloud infrastructure for scalability and security.
                 </p>
                 <div className="flex items-center justify-center space-x-3">
                   <a
@@ -227,18 +231,17 @@ const Team = () => {
           <div>
             <div className="relative overflow-hidden transition duration-300 transform rounded shadow-lg lg:hover:-translate-y-2 hover:shadow-2xl">
               <img
-                className="object-cover w-full h-56 md:h-64 xl:h-80"
-                src="https://images.pexels.com/photos/3931603/pexels-photo-3931603.jpeg?auto=compress&amp;cs=tinysrgb&amp;dpr=2&amp;h=750&amp;w=1260"
+                className="object-cover w-full h-56 md:h-64 xl:h-96 "
+                src={image_4}
                 alt="Person"
               />
               <div className="absolute inset-0 flex flex-col justify-center px-5 py-4 text-center transition-opacity duration-300 bg-black bg-opacity-75 opacity-0 hover:opacity-100">
                 <p className="mb-1 text-lg font-bold text-gray-100">
-                  Andrew Larkin
+                  George Blah Blah
                 </p>
                 <p className="mb-4 text-xs text-gray-100">Backend Developer</p>
                 <p className="mb-4 text-xs tracking-wide text-gray-400">
-                  Moonfish, steelhead, lamprey southern flounder tadpole fish
-                  bigeye.
+                Skilled backend developer ensuring platform stability and scalability.
                 </p>
                 <div className="flex items-center justify-center space-x-3">
                   <a
@@ -264,18 +267,17 @@ const Team = () => {
           <div>
             <div className="relative overflow-hidden transition duration-300 transform rounded shadow-lg lg:hover:-translate-y-2 hover:shadow-2xl">
               <img
-                className="object-cover w-full h-56 md:h-64 xl:h-80"
-                src="https://images.pexels.com/photos/774909/pexels-photo-774909.jpeg?auto=compress&amp;cs=tinysrgb&amp;dpr=3&amp;h=750&amp;w=1260"
+                className="object-cover w-full h-56 md:h-64 xl:h-96 "
+                src={image_8}
                 alt="Person"
               />
               <div className="absolute inset-0 flex flex-col justify-center px-5 py-4 text-center transition-opacity duration-300 bg-black bg-opacity-75 opacity-0 hover:opacity-100">
                 <p className="mb-1 text-lg font-bold text-gray-100">
-                  Sophie Denmo
+                  Grace Kimangi
                 </p>
                 <p className="mb-4 text-xs text-gray-100">Designer</p>
                 <p className="mb-4 text-xs tracking-wide text-gray-400">
-                  Veggies sunt bona vobis, proinde vos postulo esse magis grape
-                  pea.
+                Creative designer crafting visually appealing interfaces.
                 </p>
                 <div className="flex items-center justify-center space-x-3">
                   <a
@@ -301,18 +303,17 @@ const Team = () => {
           <div>
             <div className="relative overflow-hidden transition duration-300 transform rounded shadow-lg lg:hover:-translate-y-2 hover:shadow-2xl">
               <img
-                className="object-cover w-full h-56 md:h-64 xl:h-80"
-                src="https://images.pexels.com/photos/3931553/pexels-photo-3931553.jpeg?auto=compress&amp;cs=tinysrgb&amp;dpr=2&amp;h=750&amp;w=1260"
+                className="object-cover w-full h-56 md:h-64 xl:h-96 "
+                src={image_7}
                 alt="Person"
               />
               <div className="absolute inset-0 flex flex-col justify-center px-5 py-4 text-center transition-opacity duration-300 bg-black bg-opacity-75 opacity-0 hover:opacity-100">
                 <p className="mb-1 text-lg font-bold text-gray-100">
-                  Benedict Caro
+                  Jonnel Ceazer
                 </p>
                 <p className="mb-4 text-xs text-gray-100">Frontend Developer</p>
                 <p className="mb-4 text-xs tracking-wide text-gray-400">
-                  I love cheese, especially airedale queso. Cheese and biscuits
-                  halloumi.
+                Expert frontend developer delivering seamless user experience.
                 </p>
                 <div className="flex items-center justify-center space-x-3">
                   <a
