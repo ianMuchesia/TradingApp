@@ -1,8 +1,16 @@
 import React from 'react'
 
+import AboutHeader from '../components/AboutPageComponents/AboutHeader'
+import Choose from '../components/ServicesPageComponents/Choose'
+
 const Services = () => {
   return (
-    <div>Services</div>
+    <>
+       <AboutHeader/>
+       <div>
+        <Choose/>
+       </div>
+    </>
   )
 }
 
