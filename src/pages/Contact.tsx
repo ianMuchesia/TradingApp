@@ -1,8 +1,11 @@
 import React from 'react'
+import AboutHeader from '../components/AboutPageComponents/AboutHeader'
 
 const Contact = () => {
   return (
-    <div>Contact</div>
+    <>
+    <AboutHeader/>
+    </>
   )
 }
 

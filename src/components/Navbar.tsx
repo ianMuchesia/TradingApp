@@ -18,23 +18,22 @@ const Navbar = () => {
       {" "}
       <div className="flex justify-between items-center">
         <img src={logo} alt="logo" className="w-14 h-14" />
-        <span onClick={handleToggle}>
-          {toggle ? (
-            <AiOutlineClose
-              size={48}
-              color={"black"}
-              className="md:hidden absolute z-[50] right-4 top-6"
-            />
-          ) : (
+        {!toggle && <span onClick={handleToggle}>
+           
             <AiOutlineMenu size={48} color={"white"} className="md:hidden" />
-          )}
-        </span>
+          
+        </span>}
       </div>
       <ul
-        className={`bg-white grid place-items-center top-0 gap-4 z-[1] w-full left-0 py-4 pl-7 absolute transition-all ease-in duration-200  ${
-          toggle ? "" : "hidden"
+        className={`bg-white grid place-items-center top-0 gap-4 z-[1] w-full left-0 py-4 pl-7 absolute animate-slide-out duration-2000 ease-in-out ${
+          toggle ? "h-screen" : "hidden"
         } md:flex   md:w-auto md:py-0 md:opacity-100 md:z-auto md:pl-0 md:items-center md:static md:bg-transparent`}
       >
+       {toggle && <li><span onClick={handleToggle}> <AiOutlineClose
+              size={48}
+              color={"black"}
+              className="md:hidden "
+            /></span></li>}
         <li className={styles.links}>
           <NavLink to="/">HOME</NavLink>
         </li>

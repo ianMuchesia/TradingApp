@@ -17,6 +17,7 @@ const InputData = ({ addToWatchList }: Props) => {
     let isMounted = true;
 
     const fetchResults = async () => {
+      
       try {
         const params = new URLSearchParams();
         params.append("q", search);

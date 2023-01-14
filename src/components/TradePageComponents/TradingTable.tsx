@@ -71,7 +71,7 @@ const TradingTable = ({
   const handleDelete = (id: string) => {
   
     const newWatchList = watchList.filter((item) => item !== id);
-    console.log(watchList)
+    
     setWatchList(newWatchList);
     localStorage.setItem("watchList", JSON.stringify(newWatchList))
   };
