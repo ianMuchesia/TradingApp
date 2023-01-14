@@ -2,6 +2,7 @@ import React from 'react'
 
 import AboutHeader from '../components/AboutPageComponents/AboutHeader'
 import Choose from '../components/ServicesPageComponents/Choose'
+import ServicesAndFeatures from '../components/ServicesPageComponents/ServicesAndFeatures'
 
 const Services = () => {
   return (
@@ -9,6 +10,7 @@ const Services = () => {
        <AboutHeader/>
        <div>
         <Choose/>
+        <ServicesAndFeatures/>
        </div>
     </>
   )

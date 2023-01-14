@@ -11,7 +11,7 @@ import img9 from '../../assets/9.png'
 import img10 from '../../assets/10.png'
 const ServicesAndFeatures = () => {
   return (
-    <div>
+    <div className='grid gap-4 sm:grid-cols-2 lg:grid-cols-3 xl:grid-cols-4 m-8'>
          <div className="mx-auto flex w-80 flex-col justify-center bg-white rounded-2xl shadow-xl shadow-gray-400/20">
           <div className="grid place-items-center">
             <img
