@@ -4,7 +4,7 @@ import cent from "../../assets/cent.png";
 import AI from "../../assets/artificial.png";
 import Navbar from "../Navbar";
 import bitcoinShiny from "../../assets/bitcoinShiny.jpg";
-
+import { motion } from "framer-motion";
 const Header = () => {
   return (
     <header>
@@ -31,7 +31,7 @@ const Header = () => {
             <img
               src={bitcoin}
               alt="bitcoin coin"
-              className="rotate-45  top-28 ml-52 h-28 w-28 absolute sm:left-48"
+              className="rotate-45  top-36 ml-52 h-28 w-28 absolute sm:left-48 md:hidden"
             />
           </div>
 
@@ -39,10 +39,15 @@ const Header = () => {
             <h1 className="font-[800] text-5xl sm:text-6xl text-white w-[60%]">
             TradeSmart
             </h1>
-            <h3 className="text-3xl text-white ">at the best rate</h3>
-            <p className="text-sm lg:text-lg text-gray-200 hidden lg:block">
+            <h3 className="text-3xl text-white "
+             
+            >at the best rate</h3>
+            <motion.p className="text-sm lg:text-lg text-gray-200 hidden lg:block"
+            initial={{opacity:0}}
+            animate={{opacity: 1}}
+            transition={{ delay: 0.5, duration:1}}>
             TradeSmart: Unlock your trading potential and achieve consistent, high returns with our advanced tools, strategies and exceptional customer service
-            </p>
+            </motion.p>
             <Link to="Trade"
              
             >

@@ -22,7 +22,7 @@ const Trade = ({ watchList, setWatchList }: Props) => {
 
 
   return (
-    <div className="bg-[#031B34] ">
+    <div className="bg-[#031B34]  ">
       <Navbar />
      
       <InputData addToWatchList={addToWatchList} />

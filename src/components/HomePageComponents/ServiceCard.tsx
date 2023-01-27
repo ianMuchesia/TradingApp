@@ -16,13 +16,12 @@ const ServiceCard = () => {
             />
           </div>
           <div className="p-6">
-            <small className="text-gray-900 text-xs">Category</small>
+            <small className="text-gray-900 text-xs">Currency</small>
             <h1 className="text-2xl font-medium text-gray-700 pb-2">
-              Your Heading
+              Multi-Currency Support
             </h1>
             <p className="text text-gray-500 leading-6">
-              A wonderful serenity has taken possession of my entire soul, like
-              these sweet mornings of spring which I enjoy with my whole heart.
+            Multi-currency support for trading in different markets and currency fluctuations.
             </p>
           </div>
         </div>
@@ -36,13 +35,12 @@ const ServiceCard = () => {
             />
           </div>
           <div className="p-6">
-            <small className="text-gray-900 text-xs">Category</small>
+            <small className="text-gray-900 text-xs">Automated</small>
             <h1 className="text-2xl font-medium text-gray-700 pb-2">
-              Your Heading
+              Automated Trading Systems
             </h1>
             <p className="text text-gray-500 leading-6">
-              A wonderful serenity has taken possession of my entire soul, like
-              these sweet mornings of spring which I enjoy with my whole heart.
+            Automated trading systems that use advanced algorithms for efficient and profitable trades, with customizable settings.
             </p>
           </div>
         </div>
@@ -56,13 +54,12 @@ const ServiceCard = () => {
             />
           </div>
           <div className="p-6">
-            <small className="text-gray-900 text-xs">Category</small>
+            <small className="text-gray-900 text-xs">Research</small>
             <h1 className="text-2xl font-medium text-gray-700 pb-2">
-              Your Heading
+            Third-party research.
             </h1>
             <p className="text text-gray-500 leading-6">
-              A wonderful serenity has taken possession of my entire soul, like
-              these sweet mornings of spring which I enjoy with my whole heart.
+            Third-party research and news for additional market insights and informed trade decisions.
             </p>
           </div>
         </div>
@@ -76,13 +73,12 @@ const ServiceCard = () => {
             />
           </div>
           <div className="p-6">
-            <small className="text-gray-900 text-xs">Category</small>
+            <small className="text-gray-900 text-xs">Mobile</small>
             <h1 className="text-2xl font-medium text-gray-700 pb-2">
-              Your Heading
+            Mobile trading platform.
             </h1>
             <p className="text text-gray-500 leading-6">
-              A wonderful serenity has taken possession of my entire soul, like
-              these sweet mornings of spring which I enjoy with my whole heart.
+            Mobile trading platform that provides all the features of the desktop version and allows convenient trading on-the-go, with real-time market data and trade execution.
             </p>
           </div>
         </div>
