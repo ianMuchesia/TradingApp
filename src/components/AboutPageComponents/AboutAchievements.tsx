@@ -1,5 +1,23 @@
 import React from 'react'
+import {motion, Variants } from "framer-motion"
 
+
+
+const buttonVariants: Variants={
+  hidden:{
+    opacity:0,
+    x:'-100vw',
+
+  },
+  visible:{
+    opacity: 1,
+    x : 0,
+    transition:{
+      type: 'spring',
+      stiffness:105 
+    }
+  }
+}
 const AboutAchievements = () => {
   return (
     <div>
@@ -22,7 +40,7 @@ const AboutAchievements = () => {
       enabled us to achieve exceptional results for our clients.
     </p>
     <div className="grid place-items-center my-6">
-      <button className="shadow__btn">Start Now</button>
+      <motion.button variants={buttonVariants} initial="hidden" animate="visible" className="shadow__btn">Start Now</motion.button>
     </div>
     </div>
   )
