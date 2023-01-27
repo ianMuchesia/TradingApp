@@ -4,7 +4,25 @@ import cent from "../../assets/cent.png";
 import AI from "../../assets/artificial.png";
 import Navbar from "../Navbar";
 import bitcoinShiny from "../../assets/bitcoinShiny.jpg";
-import { motion } from "framer-motion";
+import { motion, Variants } from "framer-motion";
+
+const imageVariants : Variants ={
+   hidden:{
+    opacity: 0,
+    y:"-100vw",
+   },
+   visible:{
+    opacity: 1,
+    
+    y:[0,-15,0,-15,0,0,-8,0],
+    transition:{
+      delay:1,
+      duration: 2,
+    },
+
+   }
+}
+
 const Header = () => {
   return (
     <header>
@@ -67,25 +85,34 @@ const Header = () => {
               className="-rotate-45 h-24 w-16 ml-10 mt-4 "
             />
           </div>
-          <img
+          <motion.img
             src={bitcoin}
             alt="bitcoin coin"
+            variants={imageVariants}
+            initial= "hidden"
+            animate="visible"
             className="hidden sm:block absolute -rotate-45  bottom-24 right-48 h-28 w-32 "
           />
           <img
             src={cent}
             alt="a canadian cent"
+            
+            
             className="rotate-45 h-48 w-32 hidden xl:block absolute top-24 right-[600px] "
           />
-          <img
+          <motion.img
             src={cent}
             alt="a canadian cent"
+            variants={imageVariants}
+            initial= "hidden"
+            animate="visible"
             className="-rotate-45 h-48 w-32 hidden xl:block absolute bottom-40 right-[600px]"
           />
           <img
             src={cent}
             alt="a canadian cent"
-            className="rotate-45 h-48 w-32 hidden xl:block absolute bottom-0 right-[600px]"
+            
+            className="-rotate-45 h-48 w-32 hidden xl:block absolute bottom-0 right-[600px]"
           />
           <img
             src={AI}
