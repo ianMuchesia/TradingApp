@@ -1,14 +1,5 @@
 import React from 'react'
-import img1 from '../../assets/1.png' 
-import img2 from '../../assets/2.png'
-import img3 from '../../assets/3.png'
-import img4 from '../../assets/4.png'
-import img5 from '../../assets/5.png'
-import img6 from '../../assets/6.png'
-import img7 from '../../assets/7.png'
-import img8 from '../../assets/8.png'
-import img9 from '../../assets/9.png'
-import img10 from '../../assets/10.png'
+import {one,two, three, four, five, six, seven, eight, nine, ten,eleven, twelve, thirteen} from "../../assets"
 const ServicesAndFeatures = () => {
   return (
     <div className='grid gap-4 sm:grid-cols-2 lg:grid-cols-3 xl:grid-cols-4 m-8'>
@@ -16,7 +7,7 @@ const ServicesAndFeatures = () => {
           <div className="grid place-items-center">
             <img
               className=" w-40 object-center  h-40  "
-              src={img1}
+              src={one}
               alt=""
             />
           </div>
@@ -35,7 +26,7 @@ const ServicesAndFeatures = () => {
           <div className="grid place-items-center">
             <img
               className=" w-40 object-center  h-40  "
-              src={img1}
+              src={three}
               alt=""
             />
           </div>
@@ -54,7 +45,7 @@ const ServicesAndFeatures = () => {
           <div className="grid place-items-center">
             <img
               className=" w-40 object-center  h-40  "
-              src={img1}
+              src={four}
               alt=""
             />
           </div>
@@ -73,7 +64,7 @@ const ServicesAndFeatures = () => {
           <div className="grid place-items-center">
             <img
               className=" w-40 object-center  h-40  "
-              src={img1}
+              src={five}
               alt=""
             />
           </div>
@@ -92,7 +83,7 @@ const ServicesAndFeatures = () => {
           <div className="grid place-items-center">
             <img
               className=" w-40 object-center  h-40  "
-              src={img1}
+              src={six}
               alt=""
             />
           </div>
@@ -111,7 +102,7 @@ const ServicesAndFeatures = () => {
           <div className="grid place-items-center">
             <img
               className=" w-40 object-center  h-40  "
-              src={img1}
+              src={seven}
               alt=""
             />
           </div>
@@ -130,7 +121,7 @@ const ServicesAndFeatures = () => {
           <div className="grid place-items-center">
             <img
               className=" w-40 object-center  h-40  "
-              src={img1}
+              src={eight}
               alt=""
             />
           </div>
@@ -148,7 +139,7 @@ const ServicesAndFeatures = () => {
           <div className="grid place-items-center">
             <img
               className=" w-40 object-center  h-40  "
-              src={img1}
+              src={thirteen}
               alt=""
             />
           </div>
@@ -167,7 +158,7 @@ const ServicesAndFeatures = () => {
           <div className="grid place-items-center">
             <img
               className=" w-40 object-center  h-40  "
-              src={img1}
+              src={ten}
               alt=""
             />
           </div>
@@ -186,7 +177,7 @@ const ServicesAndFeatures = () => {
           <div className="grid place-items-center">
             <img
               className=" w-40 object-center  h-40  "
-              src={img1}
+              src={nine}
               alt=""
             />
           </div>
@@ -205,7 +196,7 @@ const ServicesAndFeatures = () => {
           <div className="grid place-items-center">
             <img
               className=" w-40 object-center  h-40  "
-              src={img1}
+              src={eleven}
               alt=""
             />
           </div>
@@ -224,7 +215,7 @@ const ServicesAndFeatures = () => {
           <div className="grid place-items-center">
             <img
               className=" w-40 object-center  h-40  "
-              src={img1}
+              src={twelve}
               alt=""
             />
           </div>

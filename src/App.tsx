@@ -9,11 +9,13 @@ import Contact from "./pages/Contact"
 import About from "./pages/About"
 
 
+
 function App() {
   const [watchList, setWatchList] = useState([ "GOOGL", "MSFT"]);
  
   return (
   <BrowserRouter>
+  
   <Routes>
     <Route path="/" element={<Home watchList={watchList}/>}/>
      <Route path="Trade" element={<Trade watchList={watchList} setWatchList={setWatchList}/>}/>

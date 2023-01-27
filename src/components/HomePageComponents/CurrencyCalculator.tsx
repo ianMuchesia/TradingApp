@@ -12,7 +12,7 @@ const Pricing = () => {
   });
   const [result, setResult] = useState<number>(1);
   const [request, setRequest] = useState(false);
-  const [list, setList ] = useState<[]>([])
+  const [list, setList ] = useState<[]>(JSON.parse(localStorage.getItem("dataList")!)||[])
 
 
   const handleChange = (event:  React.ChangeEvent<HTMLInputElement | HTMLSelectElement> ) => {
@@ -47,6 +47,7 @@ const Pricing = () => {
         if (isMounted) {
          setResult(exchangeData.conversion_result);
          setList(dataList)
+         localStorage.setItem("dataList", JSON.stringify(dataList))
         }
       } catch (error: any) {
         console.log(error.message);

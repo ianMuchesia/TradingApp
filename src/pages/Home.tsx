@@ -13,7 +13,7 @@ const Home = ({watchList}: Props) => {
     <>
     <Header/>
     <main>
-        {/*  <Pricing/>  */}
+          <Pricing/>  
         <CurrencyGraph watchList={watchList}/>
         <Services/>
         <Testimonials/>

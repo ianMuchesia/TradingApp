@@ -59,8 +59,7 @@ if(isMounted){
         Trade Live Pricing
       </h1>
       <p className="text-lg text-gray-600 text-center  my-10">
-        There are many variations of passages of Lorem Ipsum available, but the
-        majority have suffered alteration in some look even slightly believable.
+      Unlock the full potential of your trading strategy with our in-depth, real-time trade charts, providing you with a comprehensive and accurate picture of the market trends to inform your investment decisions.
       </p>
       <div className="grid lg:grid-cols-3 gap-10 ">
         {chartData.map((item:any, index) => {

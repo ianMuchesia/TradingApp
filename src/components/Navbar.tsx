@@ -1,7 +1,7 @@
 import { useState } from "react";
 import logo from "../assets/logo.png";
 import { AiOutlineMenu, AiOutlineClose } from "react-icons/ai";
-import { NavLink } from "react-router-dom";
+import { Link, NavLink } from "react-router-dom";
 
 const styles = {
   links: `my-3 md:my-0 md:text-gray-200 hover:underline hover:text-lg transition duration-500 ease-out hover:ease-in hover:text-red-500 xl:mx-4 xl:text-xl`,
@@ -14,10 +14,13 @@ const Navbar = () => {
   };
 
   return (
-    <nav className="p-4 md:flex  md:items-center md:justify-between">
+    <div className="p-4 md:flex  md:items-center md:justify-between">
       {" "}
       <div className="flex justify-between items-center">
+        <Link to="/">
         <img src={logo} alt="logo" className="w-14 h-14" />
+        </Link>
+        
         {!toggle && <span onClick={handleToggle}>
            
             <AiOutlineMenu size={48} color={"white"} className="md:hidden" />
@@ -52,7 +55,7 @@ const Navbar = () => {
         </li>
       </ul>
       <h6 className="hidden md:block text-white text-lg">Log in</h6>
-    </nav>
+    </div>
   );
 };
 
